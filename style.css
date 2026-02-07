@@ -741,24 +741,20 @@ footer ul li span a i:hover{
     }
     .heroSection img{
         padding-bottom: 30px;
+        width: 400px;
     }
-}
-@media only screen and (max-width: 540px) {
-    .serviceCards{
-        margin: 0 20px;
+    .caseStudyCards .card{
+        width: 250px;
+        height: 200px;
     }
-    .caseStudyCards{
-        grid-template-columns: 1fr;
-        gap: 10px;
+    .enginSection div .secTitle{
+        width: 400px;
+        margin: auto auto;
     }
     .enginSection{
         display: block;
         padding: 50px 20px;
         text-align: center;
-    }
-    .enginSection div .secTitle{
-        width: 400px;
-        margin: auto auto;
     }
     .enginSection div{
         text-align: center;
@@ -776,19 +772,40 @@ footer ul li span a i:hover{
     .teamSec .teamCards .card img{
         width: 200px;
     }
+}
+@media only screen and (max-width: 576px) {
+    .serviceCards{
+        margin: 0 20px;
+    }
+    .caseStudyCards .card{
+        width: 350px;
+        height: 292px;
+    }
+    .caseStudyCards{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
     .clouds{
-        display: block;
-        margin: 0 115px;
+        display: flex;
+        flex-direction: column;
     }
     .cloud{
         padding-bottom: 75px;
     }
     .testinomialSec{
-        width: 500px;
+        width: 100%;
+    }
+    .testinomialSec .secTitle{
+        margin: 0 auto;
+        width: 200px;
+    }
+    .cloudsSlider{
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     .cloudSlider{
         display: none;
-        width: 500px;
     }
     .contactSec form{
         grid-template-columns: 1fr;
@@ -820,11 +837,14 @@ footer ul li span a i:hover{
     .serviceCards .card{
         padding-bottom: 30px;
     }
-    .secTitle{
-        width: 300px;
-    }
     .teamSec .teamCards{
         grid-template-columns: 1fr;
+    }
+    .enginSection .secTitle:nth-of-type(1){
+        display: none;        
+    }
+    .smallTitle{
+        display: block;
     }
 }
 
@@ -835,11 +855,8 @@ footer ul li span a i:hover{
     .heroSection img{
         width: 300px;
     }
-    .enginSection .secTitle:nth-of-type(1){
-        display: none;        
-    }
-    .smallTitle{
-        display: block;
+    .enginSection img{
+        width: 225px;
     }
     .caseStudyCards .card{
         width: 250px;
